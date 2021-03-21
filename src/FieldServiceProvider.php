@@ -40,6 +40,6 @@ class FieldServiceProvider extends ServiceProvider
         }
         
         Route::middleware('nova')
-            ->post('nova-vendor/nova-toggle/toggle/{resource}', [ApiController::class, 'index']);
+            ->post('nova-vendor/nova-toggle/toggle/{resource}', "Davidpiesse\NovaToggle\ApiController@index");
     }
 }
